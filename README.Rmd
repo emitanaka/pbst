@@ -32,7 +32,7 @@ remotes::install_github("emitanaka/pbst")
 
 ## Example 
 
-Suppose there are $m$ varieties tested at $p$ locations. You feed a factor analytic model as per Smith (2001) with $k$ factors. 
+Suppose there are $m$ varieties tested at $p$ locations. You fit a factor analytic model as per Smith (2001) with $k$ factors. 
 
 You should have a data that consists of the estimates of the loading matrix which has dimension of $p$ rows and $k$ columns. In addition, you should have the variety scores as a _matrix_ with $m$ rows and $k$ factors. The score matrix should have the rownames with the names of the variety. 
 
