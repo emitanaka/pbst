@@ -1,0 +1,19 @@
+Package: pbst
+Title: Plant Breeding Selection Tools
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Emi",
+           family = "Tanaka",
+           role = c("aut", "cre"),
+           email = "dr.emi.tanaka@gmail.com",
+           comment = c(ORCID = "0000-0002-1455-259X"))
+Description: Implements tools to assist selection from 
+ multi-environment trial data of plant breeding experiments
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: es
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10)

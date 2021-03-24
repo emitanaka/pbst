@@ -1,0 +1,63 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# pbst
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+This R-package implements tools to assist selection from 
+ multi-environment trial data of plant breeding experiments based on Smith and Cullis (2018).
+
+## Installation
+
+You can install the development version of this package as:
+
+``` r
+#  install.packages("remotes")
+remotes::install_github("emitanaka/pbst")
+```
+
+## Example 
+
+Suppose there are $m$ varieties tested at $p$ locations. You feed a factor analytic model as per Smith (2001) with $k$ factors. 
+
+You should have a data that consists of the estimates of the loading matrix which has dimension of $p$ rows and $k$ columns. In addition, you should have the variety scores as a _matrix_ with $m$ rows and $k$ factors. The score matrix should have the rownames with the names of the variety. 
+
+A sample data provided by Manigben Kulai Amadu are provided as `loadings` and `scores` when you load the package. 
+
+```{r}
+library(pbst)
+dim(scores)
+head(scores)
+loadings
+```
+
+In the example above there are `r nrow(scores)` varieties tested at `r nrow(loadings)` environments (note: not all varieties are tested at each location).
+
+The estimates of the loading matrix are not unique. There are some common rotation used and below employs the one recommended by Smith & Cullis (2018). 
+
+```{r}
+rotate_loading(loadings)
+```
+
+When using the recommended Factor Analytic Selection Tools (FAST), you should use the rotated version of the loading matrix. The output shows the overall performance (OP) and the root mean square deviation. 
+
+```{r}
+results <- FAST(rotate_loading(loadings), scores)
+head(results)
+```
+
+
