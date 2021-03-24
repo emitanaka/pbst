@@ -23,7 +23,7 @@ remotes::install_github("emitanaka/pbst")
 
 ## Example
 
-Suppose there are \(m\) varieties tested at \(p\) locations. You feed a
+Suppose there are \(m\) varieties tested at \(p\) locations. You fit a
 factor analytic model as per Smith (2001) with \(k\) factors.
 
 You should have a data that consists of the estimates of the loading
