@@ -9,7 +9,8 @@
 
 This R-package implements tools to assist selection from
 multi-environment trial data of plant breeding experiments based on
-Smith and Cullis (2018).
+Smith and Cullis (2018) “Plant breeding selection tools built on factor
+analytic mixedmodels for multi-environment trial data” *Euphytica*.
 
 ## Installation
 
