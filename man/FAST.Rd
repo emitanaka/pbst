@@ -3,6 +3,10 @@
 \name{FAST}
 \alias{FAST}
 \title{Stability calculation of variety}
+\source{
+Smith & Cullis (2018) Plant breeding selection tools built on
+factor analytic mixedmodels for multi-environment trial data. Euphytica.
+}
 \usage{
 FAST(loading, scores)
 }

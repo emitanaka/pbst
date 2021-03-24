@@ -9,6 +9,14 @@
 Implements tools to assist selection from 
  multi-environment trial data of plant breeding experiments
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/emitanaka/pbst}
+  \item Report bugs at \url{https://github.com/emitanaka/pbst/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Emi Tanaka \email{dr.emi.tanaka@gmail.com} (\href{https://orcid.org/0000-0002-1455-259X}{ORCID})
 

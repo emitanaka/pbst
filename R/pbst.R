@@ -27,6 +27,8 @@ rotate_loading <- function(loading) {
 #' @return A named list containing overall performance (OP) and
 #' root mean square deviation (RSMD)
 #' @export
+#' @source Smith & Cullis (2018) Plant breeding selection tools built on
+#' factor analytic mixedmodels for multi-environment trial data. Euphytica.
 #'
 FAST <- function(loading, scores) {
   if(!all(loading[,1] >= 0)) {
